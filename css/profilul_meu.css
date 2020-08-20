@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background-color: #fefaff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5vh;
+    background-color: #5d495bf0;
+    font-family: 'Popins', sans-serif;
+}
+
+footer {
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(26, 25, 25, 0.9);
+    color: whitesmoke;
+    align-content: center;
+    text-align: center;
+}
+
+button:focus {
+	outline: 0;
+}
+
+p {
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+/* Setting nav-bar */
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 85%;
+}
+
+.nav-links .pages .element {
+	padding-left: 5px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a, .profileBtts {
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin: 7px;
+    font-size: 15px;
+}
+
+.nav-links .pages a {
+    color: black;
+}
+
+.nav-links .pages {
+	display: flex;
+}
+
+
+/* Logo hover effect */
+.logoImg {
+	transition: transform .2s;
+}
+
+.logoImg:hover {
+	transform: scale(1.2);
+}
+
+/* Navigation dropdown Contul meu/Cosul meu/Help */
+.nav-btn {
+	background-color: inherit;
+	border: inherit;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin: 7px;
+    font-size: 16px;
+}
+
+.nav-btn:hover {
+	background-color: #5d495b;
+}
+
+/* Navigation dropdown pages (GENERAL) */
+.dropdown-menu  {
+	overflow: hidden;
+	background-color: inherit;
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin-left: 7px;
+    font-size: 16px;
+    align-self: center;  
+}
+
+.dropdown-menu .dropdown-btn {
+	font-size: 14px;
+	border: none;
+	outline: none;
+	padding: 7px 10px;
+	background-color: inherit;
+}
+
+.dropdown-btn:hover {
+	background-color: #5d495b;
+}
+
+.dropdown-pages {
+	display: none;
+	position: absolute;
+	background-color: #fefaff;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.23);
+	z-index: 1;
+}
+
+.dropdown-pages .bookTypes,.dropdown-pages .myPage {
+	float: none;
+	color: black;
+	border: 1px solid #af87ab42;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-pages a:hover {
+	background-color: #af87ab42;
+}
+
+.dropdown-menu:hover .dropdown-pages {
+	display: block;
+}
+
+/* Dropdown menues auth/cart */
+.contDesc {
+	margin-left: 10px;
+	font-size: 14px;
+}
+
+.dropdown-pages p {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-pages p:hover {
+	cursor: default;
+}
+
+.dropdown-pages .profileBtts, .dropdown-pages .formLog a {
+	background-color: #fefaff;
+	text-align: center;
+	width: 92%;
+}
+
+.dropdown-pages .formLog a {
+	width: 70%;
+}
+
+.dropdown-pages .auth-btn:hover {
+	background-color: #af87ab42;
+}
+
+.dropdown-cont {
+	width: 360px
+}
+
+nav>.nav-links>.pages>.dropdown-menu>.dropdown-pages:after {
+	position: absolute;
+	left: 10%;
+	top: -10px;
+	width: 0;
+	height: 0;
+	content: '';
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fefaff;
+}
+
+.dropdown-menu .dropdown-btn {
+	letter-spacing: 3px;
+}
+
+#cosAjutor {
+	align-self: center;
+	padding: 7px 10px;
+}
+
+/* Contul meu/Creeare cont buttons */
+.auth {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.profile {
+	width: 20.5vh;
+}
+
+.dropdown-pages .formLog option {
+	border-bottom: 1px solid #af87ab29;
+	margin: -10px 0 4px 0;
+	width: 170px;
+}
+
+/* Div Produse dropdown */ /* Side bar adjustments */
+
+nav>.nav-links>.pages>.dropdown-menu>#produse:after {
+	left: 16.5%;
+}
+
+.content {
+    display: flex;
+    width: 700px;
+}
+
+.types .bookTypes,.dropdown-pages .myPage{
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+}
+
+.content .sidebar .types{
+    display: flex;
+    flex-direction: column;
+}
+
+.content .sidebar {
+	overflow-X: hidden;
+	overflow-Y: scroll;
+    width: 366px;
+    height: 800px;
+}
+
+/* Description div */
+.content .description {
+    display: grid;
+    width: 300px;
+    margin: 0 0.5vh;
+    padding: 15px 0 0 15px;
+    border-left: 1px solid #8069868a;
+}
+
+/* Scrollbar - Sidebar - Produse */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #7e468abf;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #a48bab;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5d495bf0; 
+}
+
+.description .typesB {
+	display: flex;
+	flex-direction: column;
+	font-size: 11px;
+}
+
+.description .typesB a {
+	font-size: 11px;
+	padding: 10px 14px;
+	margin-bottom: 5px;
+}
+
+/* Container content */
+.container {
+	margin: 50px 0 0 50px;
+}
+
+.container .detalii_cont {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	width: 70%;
+	height: 295px;
+}
+
+.container .detalii_cont .wr-detcont {
+	display: flex;
+	border-bottom: 2px solid #af87ab29;
+	width: 100%;
+	height: 250px
+}
+
+.wraper_img .img_container {
+	display: flex;
+	border-radius: 250px;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin: 5%;
+}
+
+.wraper_img .change_photo {
+	width: 30px;
+	height: 30px;
+	background-color: #ffe7f2;
+	display: flex;
+	justify-content: center;
+	border-radius: 15px;
+	margin-top: 70%;
+	margin-left: -27%;
+	transition: transform .2s;
+}
+
+.wraper_img .change_photo:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.img_container  .profile_photo{
+	align-self: center;
+	width: 150px;
+}
+
+.detalii_cont .change_photo .fa-pen {
+	align-self: center;
+	font-size: 14px;
+}
+
+.detalii_cont .wraper_img {
+	display: flex;
+	height: 40%;
+	margin: 7% 0 0 7%;
+}
+
+.wraper-content .content-form {
+	display: flex;
+	flex-direction: column;
+	margin-left: 130px;
+	margin-top: 80px;
+}
+
+.content-form .content-label {
+	margin-bottom: 25px;
+}
+
+.detalii_cont .butt-delimiter {
+	align-self: center;
+	margin-top: 12px;
+	border: none;
+}
+
+
