@@ -15,9 +15,10 @@
             <header>
                 <nav>
 				<!-- Page logo -->
-					<?php echo '<a href="index.php">
-									<img src="../images/logo/logo3.jpg" class="logoImg" style="width:30px; height:30px;">
-								</a>';
+					<?php 
+						echo '<a href="index.php">
+							      <img src="../images/logo/logo3.jpg" class="logoImg" style="width:30px; height:30px;">
+							  </a>';
 					?>
 					
                     <ul class="nav-links">
@@ -27,40 +28,43 @@
 								<button class="dropdown-btn"> Produse <i class="fas fa-angle-down"></i></button>
 								
 								<div id="produse" class="dropdown-pages">
+									<div class="trProd"></div>
 									<div class="content">
 										<div class="sidebar">
 											<ul class="sidebar-links">
 												<li class="types">
-													<?php echo '<a href="#" class="bookTypes audiobooks">AUDIOBOOKS</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes culinare">CULINARE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes arta">ARTA, ARHITECTURA</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes enciclopedii">ENCICLOPEDII</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes reviste">REVISTE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes biografii">BIOGRAFII, MEMORII, JURNALE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes dictionare">LINGVISTICA, DICTIONARE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes limbiStraine">LIMBI STRAINE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes poezie">POEZIE, TEATRU, STUDII LITERARE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes fictiune">FICTIUNE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes benziDesenate">BENZI DESENATE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes atlase">GHIDURI SI HARTI TURISTICE, ATLASE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes istorie">ISTORIE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes religie">RELIGIE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes filosofie">FILOSOFIE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes psihologie">PSIHOLOGIE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes politica">STIINTE SOCIALE. POLITICA</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes marketing">MARKETING SI COMUNICARE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes business">BUSINESS SI ECONOMIE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes drept">DREPT</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes medicina">MEDICINA</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes matematici">STIINTE EXACTE. MATEMATICI</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes natura">NATURA SI MEDIU</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes tehnologie">TEHNICA SI TEHNOLOGIE</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes internet">COMPUTERE SI INTERNET</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes sanatate">SANATATE, DEZVOLTARE PERSONALA</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes sport">LIFESTYLE, SPORT, TIMP LIBER</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes ptCopii">PENTRU COPII, ADOLESCENTI</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes romania">ROMANIA</a>'; ?>
-													<?php echo '<a href="#" class="bookTypes softEducational">SOFT EDUCATIONAL</a>'; ?>
+													<?php 
+														echo '<a href="#" class="bookTypes audiobooks">AUDIOBOOKS</a>';
+														echo '<a href="#" class="bookTypes culinare">CULINARE</a>';
+														echo '<a href="#" class="bookTypes arta">ARTA, ARHITECTURA</a>';
+														echo '<a href="#" class="bookTypes enciclopedii">ENCICLOPEDII</a>';
+														echo '<a href="#" class="bookTypes reviste">REVISTE</a>';
+														echo '<a href="#" class="bookTypes biografii">BIOGRAFII, MEMORII, JURNALE</a>';
+														echo '<a href="#" class="bookTypes dictionare">LINGVISTICA, DICTIONARE</a>';
+														echo '<a href="#" class="bookTypes limbiStraine">LIMBI STRAINE</a>';
+														echo '<a href="#" class="bookTypes poezie">POEZIE, TEATRU, STUDII LITERARE</a>';
+														echo '<a href="#" class="bookTypes fictiune">FICTIUNE</a>';
+														echo '<a href="#" class="bookTypes benziDesenate">BENZI DESENATE</a>';
+														echo '<a href="#" class="bookTypes atlase">GHIDURI SI HARTI TURISTICE, ATLASE</a>';
+														echo '<a href="#" class="bookTypes istorie">ISTORIE</a>';
+														echo '<a href="#" class="bookTypes religie">RELIGIE</a>';
+														echo '<a href="#" class="bookTypes filosofie">FILOSOFIE</a>';
+														echo '<a href="#" class="bookTypes psihologie">PSIHOLOGIE</a>';
+														echo '<a href="#" class="bookTypes politica">STIINTE SOCIALE. POLITICA</a>';
+														echo '<a href="#" class="bookTypes marketing">MARKETING SI COMUNICARE</a>';
+														echo '<a href="#" class="bookTypes business">BUSINESS SI ECONOMIE</a>';
+														echo '<a href="#" class="bookTypes drept">DREPT</a>';
+														echo '<a href="#" class="bookTypes medicina">MEDICINA</a>';
+														echo '<a href="#" class="bookTypes matematici">STIINTE EXACTE. MATEMATICI</a>';
+														echo '<a href="#" class="bookTypes natura">NATURA SI MEDIU</a>';
+														echo '<a href="#" class="bookTypes tehnologie">TEHNICA SI TEHNOLOGIE</a>';
+														echo '<a href="#" class="bookTypes internet">COMPUTERE SI INTERNET</a>';
+														echo '<a href="#" class="bookTypes sanatate">SANATATE, DEZVOLTARE PERSONALA</a>';
+														echo '<a href="#" class="bookTypes sport">LIFESTYLE, SPORT, TIMP LIBER</a>';
+														echo '<a href="#" class="bookTypes ptCopii">PENTRU COPII, ADOLESCENTI</a>';
+														echo '<a href="#" class="bookTypes romania">ROMANIA</a>';
+														echo '<a href="#" class="bookTypes softEducational">SOFT EDUCATIONAL</a>'; 
+													?>
 												</li>
 											</ul>
 										</div>
@@ -74,50 +78,57 @@
 							<div class="dropdown-menu element">
 								<button class="dropdown-btn"> MyPage <i class="fas fa-angle-down"></i></button>
 								<div class="dropdown-pages">
-									<?php echo '<a href="despre_noi.php" class="myPage">DESPRE NOI</a>'; ?>
-									<?php echo '<a href="contact.php" class="myPage">CONTACT</a>'; ?>
+									<div class="trMyPage"></div>
+									<?php 
+										echo '<a href="despre_noi.php" class="myPage">DESPRE NOI</a>';
+										echo '<a href="contact.php" class="myPage">CONTACT</a>'; 
+									?>
 								</div>
 							</div>
                             
 							<!-- Dropdown menu cu Logarea('Contul meu') -->
-							<div class="dropdown-menu element">
+                            <div class="dropdown-menu element">
 								<?php
 									if($_SESSION['userId'])
-										echo '<button class="dropdown-btn profile"><i class="fas fa-user-alt"></i> Profilul meu <i class="fas fa-angle-down"></i></button>';
+										echo '<button class="dropdown-btn"><i class="fas fa-user-alt"></i> Profilul meu <i class="fas fa-angle-down"></i></button>';
 									else
 										echo '<button class="dropdown-btn"><i class="fas fa-user-alt"></i> Contul meu <i class="fas fa-angle-down"></i></button>';
-								?>
-								<?php
+								
 									if(!$_SESSION['userId'])
 										echo '<div class="dropdown-pages dropdown-cont">
-												  <p class="contDesc">
-													  Vivamus consectetur, turpis nisl rhoncus risus non molestie magna.
-												  </p>';
+												  <div class="trCont"></div>';
 									else
+									{
 										echo '<div class="dropdown-pages dropdown-cont profile">';
-								?>
+										echo '<div class="trProfile"></div>';
+									}
+								
 									
-									<div class="auth">
-										<?php
-											if(isset($_SESSION['userId']))
-												echo '<form action="../php_includes/logout.php" method="POST" class="formLog">
-														  <a href="profilul_meu.php" class="auth-btn myPage">CONTUL MEU</a>
-														  <option disabled="disabled"></option>
-														  <input type="submit" class="auth-btn myPage profileBtts" value="LOG OUT">
-													  </form>';
-											else
-											{
-												echo '<a href="log_in.php" class="auth-btn myPage">AUTENTIFICARE</a>';
-												echo '<a href="sign_up.php" class="auth-btn myPage">INREGISTRARE</a>';
-											}
-										?>
-									</div>
+									echo '<div class="auth">';
+									
+									if(isset($_SESSION['userId']))
+										echo '<form action="../php_includes/logout.php" method="POST" class="formLog">
+												  <a href="profilul_meu.php" class="auth-btn myPage">CONTUL MEU</a>
+												  <option disabled="disabled"></option>
+												  <input type="submit" class="auth-btn myPage profileBtts" value="LOG OUT">
+											  </form>';
+									else
+									{
+										echo '<a href="log_in.php" class="auth-btn myPage">AUTENTIFICARE</a>';
+										echo '<a href="sign_up.php" class="auth-btn myPage">INREGISTRARE</a>';
+									}
+									
+									echo '</div>';
+								?>
+								
 								</div>
 							</div>
 							
 							<!-- Butoanele cu Cosul de cumparaturi si Sectiunea de ajutor -->
-							<?php echo '<a href="cos_cumparaturi.php" class="nav-btn element" id="cosAjutor"><i class="fab fa-opencart"></i>Cosul tau</a>'; ?>
-							<?php echo '<a href="help.php" class="nav-btn element" id="cosAjutor"><i class="far fa-question-circle"></i>Ajutor</a>'; ?>
+							<?php 
+								echo '<a href="cos_cumparaturi.php" class="nav-btn element" id="cosAjutor"><i class="fab fa-opencart"></i>Cosul tau</a>';
+								echo '<a href="help.php" class="nav-btn element" id="cosAjutor"><i class="far fa-question-circle"></i>Ajutor</a>'; 
+							?>
                         </li>
                     </ul>
                 </nav>
@@ -137,6 +148,8 @@
 						</div>
 						
 						<input type="submit" class="logIn-btn" value="Autentificare" id="submitBtn">
+						
+						<a href="sign_up.php" class="contNouInAuth">Nu ai cont? Creeaza unul acum.</a>
 					</form>
 				</div>
 				<br/>

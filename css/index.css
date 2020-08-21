@@ -177,11 +177,6 @@ a {
 }
 
 /* Dropdown menues auth/cart */
-.contDesc {
-	margin-left: 10px;
-	font-size: 14px;
-}
-
 .dropdown-pages p {
 	float: none;
 	color: black;
@@ -209,14 +204,10 @@ a {
 	background-color: #af87ab42;
 }
 
-.dropdown-cont {
-	width: 360px
-}
-
 .dropdown-pages .trProd {
 	position: absolute;
 	top: -10px;
-	left: 14.2%;
+	left: 85px;
 	width: 0;
 	height: 0;
 	content: "";
@@ -228,7 +219,7 @@ a {
 .dropdown-pages .trMyPage {
 	position: absolute;
 	top: -10px;
-	left: 59.98%;
+	left: 81px;
 	width: 0;
 	height: 0;
 	content: "";
@@ -240,7 +231,7 @@ a {
 .dropdown-pages .trCont {
 	position: absolute;
 	top: -10px;
-	left: 43.8%;
+	left: 137px;
 	width: 0;
 	height: 0;
 	content: "";
@@ -249,6 +240,17 @@ a {
 	border-bottom: 10px solid #fefaff;
 }
 
+.dropdown-pages .trProfile {
+	position: absolute;
+	top: -10px;
+	left: 145px;
+	width: 0;
+	height: 0;
+	content: "";
+	border-left: 10px solid #00000000;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fefaff;
+}
 
 .dropdown-menu .dropdown-btn {
 	letter-spacing: 3px;
@@ -262,18 +264,18 @@ a {
 /* Contul meu / Profilul meu / Creeare cont buttons */
 .auth {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-direction: column;
+	width: 18.4vh;
 }
 
 .profile {
-	width: 20.5vh;
+	width: 18.5vh;
 }
 
 .dropdown-pages .formLog option {
 	border-bottom: 1px solid #af87ab29;
 	margin: -10px 0 4px 0;
-	width: 170px;
+	width: 173px;
 }
 
 /* Div Produse dropdown */ /* Side bar adjustments */
@@ -284,8 +286,9 @@ a {
 
 .types .bookTypes,.dropdown-pages .myPage {
     text-decoration: none;
-    font-size: 11px;
+    font-size: 10px;
     color: black;
+    font-weight: bold;
 }
 
 .content .sidebar .types{
@@ -295,9 +298,9 @@ a {
 
 .content .sidebar {
 	overflow-X: hidden;
-	overflow-Y: scroll;
-    width: 366px;
-    height: 800px;
+	overflow-Y: auto;
+    width: 350px;
+    height: 500px;
 }
 
 /* Description div */
@@ -305,7 +308,6 @@ a {
     display: grid;
     width: 300px;
     margin: 0 0.5vh;
-    padding: 15px 0 0 15px;
     border-left: 1px solid #8069868a;
 }
 
@@ -328,15 +330,18 @@ a {
 
 /* Produse subtypes */
 .description .typesB {
+    width: 340px;
+    height: 500px;
 	display: flex;
 	flex-direction: column;
 	font-size: 11px;
+	overflow-X: hidden;
+	overflow-Y: auto;
 }
 
 .description .typesB a {
 	font-size: 11px;
 	padding: 10px 14px;
-	margin-bottom: 5px;
 }
 
 /* Content index.php */
@@ -440,7 +445,7 @@ a {
 	height: 0;
 	content: '';
 	border-right: 7px solid transparent;
-	border-top: 7px solid #6b6463;
+	border-top: 6px solid #6b6463;
 }
 
 .contentAll .prodDetails .productDisplay .pretProd {
@@ -451,6 +456,7 @@ a {
 }
 
 .prodDetails {
+	width: 230px;
 	display: flex;
 	margin-right: 15px;
 	position: relative;

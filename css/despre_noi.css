@@ -74,7 +74,6 @@ p {
 	display: flex;
 }
 
-
 /* Logo hover effect */
 .logoImg {
 	transition: transform .2s;
@@ -149,11 +148,6 @@ p {
 }
 
 /* Dropdown menues auth/cart */
-.contDesc {
-	margin-left: 10px;
-	font-size: 14px;
-}
-
 .dropdown-pages p {
 	float: none;
 	color: black;
@@ -181,18 +175,50 @@ p {
 	background-color: #af87ab42;
 }
 
-.dropdown-cont {
-	width: 360px
-}
-
-nav>.nav-links>.pages>.dropdown-menu>.dropdown-pages:after {
+.dropdown-pages .trProd {
 	position: absolute;
-	left: 10%;
 	top: -10px;
+	left: 85px;
 	width: 0;
 	height: 0;
-	content: '';
-	border-left: 10px solid transparent;
+	content: "";
+	border-left: 10px solid #00000000;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fefaff;
+}
+
+.dropdown-pages .trMyPage {
+	position: absolute;
+	top: -10px;
+	left: 81px;
+	width: 0;
+	height: 0;
+	content: "";
+	border-left: 10px solid #00000000;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fefaff;
+}
+
+.dropdown-pages .trCont {
+	position: absolute;
+	top: -10px;
+	left: 138px;
+	width: 0;
+	height: 0;
+	content: "";
+	border-left: 10px solid #00000000;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #fefaff;
+}
+
+.dropdown-pages .trProfile {
+	position: absolute;
+	top: -10px;
+	left: 145px;
+	width: 0;
+	height: 0;
+	content: "";
+	border-left: 10px solid #00000000;
 	border-right: 10px solid transparent;
 	border-bottom: 10px solid #fefaff;
 }
@@ -206,35 +232,30 @@ nav>.nav-links>.pages>.dropdown-menu>.dropdown-pages:after {
 	padding: 7px 10px;
 }
 
-/* Contul meu/Creeare cont buttons */
+/* Contul meu / Profilul meu / Creeare cont buttons */
 .auth {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	flex-direction: column;
+	width: 18.4vh;
 }
 
 .profile {
-	width: 20.5vh;
+	width: 18.5vh;
 }
 
 .dropdown-pages .formLog option {
 	border-bottom: 1px solid #af87ab29;
 	margin: -10px 0 4px 0;
-	width: 170px;
+	width: 173px;
 }
 
 /* Div Produse dropdown */ /* Side bar adjustments */
-
-nav>.nav-links>.pages>.dropdown-menu>#produse:after {
-	left: 16.5%;
-}
-
 .content {
     display: flex;
     width: 700px;
 }
 
-.types .bookTypes,.dropdown-pages .myPage{
+.types .bookTypes,.dropdown-pages .myPage {
     text-decoration: none;
     font-size: 11px;
     color: black;
@@ -247,7 +268,7 @@ nav>.nav-links>.pages>.dropdown-menu>#produse:after {
 
 .content .sidebar {
 	overflow-X: hidden;
-	overflow-Y: scroll;
+	overflow-Y: auto;
     width: 366px;
     height: 800px;
 }
@@ -278,18 +299,21 @@ nav>.nav-links>.pages>.dropdown-menu>#produse:after {
   background: #5d495bf0; 
 }
 
+/* Produse subtypes */
 .description .typesB {
+    width: 340px;
+    height: 500px;
 	display: flex;
 	flex-direction: column;
 	font-size: 11px;
+	overflow-X: hidden;
+	overflow-Y: auto;
 }
 
 .description .typesB a {
 	font-size: 11px;
 	padding: 10px 14px;
-	margin-bottom: 5px;
 }
-
 
 
 
