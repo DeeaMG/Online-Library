@@ -1,5 +1,5 @@
 <?php
-	$mysqli = new mysqli("xxxx","xxxx","xxxx","xxxx");
+	$mysqli = new mysqli("sql300.unaux.com","unaux_25850284","w1lw95u73","unaux_25850284_auth");
 
 	// Check connection
 	if ($mysqli -> connect_errno) {

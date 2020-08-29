@@ -10,7 +10,7 @@ session_start();
 		<meta charset="UTF-8">
 		<title> SomethingTest.com </title>
 		<link rel="stylesheet" href="../css/index.css">
-		<link rel="shortcut icon" href="../images/favicon.ico">
+		<link rel="icon" href="../images/LOGO.ico">
 		<!-- Font Awesome Icons -->
 		<script src="https://kit.fontawesome.com/6f6bccd148.js" crossorigin="anonymous"></script>
 		<!-- Jquery -->
@@ -49,12 +49,12 @@ session_start();
 											<ul class="sidebar-links">
 												<li class="types">
 													<?php 
-														echo '<a href="#" class="bookTypes audiobooks">AUDIOBOOKS</a>';
-														echo '<a href="#" class="bookTypes culinare">CULINARE</a>';
+														echo '<a href="books_subtypes/audiobooks.php" class="bookTypes audiobooks">AUDIOBOOKS</a>';
+														echo '<a href="books_subtypes/culinare.php" class="bookTypes culinare">CULINARE</a>';
 														echo '<a href="#" class="bookTypes arta">ARTA, ARHITECTURA</a>';
-														echo '<a href="#" class="bookTypes enciclopedii">ENCICLOPEDII</a>';
+														echo '<a href="books_subtypes/enciclopedii.php" class="bookTypes enciclopedii">ENCICLOPEDII</a>';
 														echo '<a href="#" class="bookTypes reviste">REVISTE</a>';
-														echo '<a href="#" class="bookTypes biografii">BIOGRAFII, MEMORII, JURNALE</a>';
+														echo '<a href="books_subtypes/biografii_memorii_jurnale.php" class="bookTypes biografii">BIOGRAFII, MEMORII, JURNALE</a>';
 														echo '<a href="#" class="bookTypes dictionare">LINGVISTICA, DICTIONARE</a>';
 														echo '<a href="#" class="bookTypes limbiStraine">LIMBI STRAINE</a>';
 														echo '<a href="#" class="bookTypes poezie">POEZIE, TEATRU, STUDII LITERARE</a>';
@@ -77,7 +77,7 @@ session_start();
 														echo '<a href="#" class="bookTypes sanatate">SANATATE, DEZVOLTARE PERSONALA</a>';
 														echo '<a href="#" class="bookTypes sport">LIFESTYLE, SPORT, TIMP LIBER</a>';
 														echo '<a href="#" class="bookTypes ptCopii">PENTRU COPII, ADOLESCENTI</a>';
-														echo '<a href="#" class="bookTypes romania">ROMANIA</a>';
+														echo '<a href="books_subtypes/romania.php" class="bookTypes romania">ROMANIA</a>';
 														echo '<a href="#" class="bookTypes softEducational">SOFT EDUCATIONAL</a>'; 
 													?>
 												</li>
